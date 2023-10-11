@@ -3,9 +3,9 @@
 # Date: May 2022
 
 import os
-import random
 import player as p
 import enemies as e
+import secrets
 
 def load_game():
     # This function will load the game
@@ -18,7 +18,7 @@ def save_game():
 def attack(enemy, weapon):
     # This function will return the damage done to an enemy
     print("You attack the with your " + weapon)
-    damage = random.randint(1, 10)
+    damage = secrets.SystemRandom().randint(1, 10)
     return damage
 
 def loot(enemy):
