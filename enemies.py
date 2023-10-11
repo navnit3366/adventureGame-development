@@ -1,4 +1,4 @@
-import random
+import secrets
 
 # list of enemies
 enemylist = ["goblin", "orc", "troll", "elf", "human", "dog", "dragon", "dwarf", "treeants", "kobold", "skeleton", "zombie", "wizard", "warlock", "gnome"]
@@ -6,7 +6,7 @@ enemylist = ["goblin", "orc", "troll", "elf", "human", "dog", "dragon", "dwarf",
 # Enemy functions
 def enemy_generator():
     # This function will generate an enemy
-    enemy = random.choice(enemylist)
+    enemy = secrets.SystemRandom().choice(enemylist)
     return enemy
 
 # # Example enemy
